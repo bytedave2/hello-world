@@ -11,6 +11,43 @@
                     "200": {}
                 }
             }
+        },
+        "/api/v1/items": {
+            "get": {
+                "responses": {
+                    "200": {}
+                }
+            },
+            "put": {
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "format": "date-time",
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {}
+                }
+            },
+            "post": {
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "format": "int64",
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {}
+                }
+            }
         }
     }
 }
