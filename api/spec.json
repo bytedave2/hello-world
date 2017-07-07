@@ -8,14 +8,18 @@
         "/api/v1/": {
             "get": {
                 "responses": {
-                    "200": {}
+                    "200": {
+                        "description": "Standard resonse."
+                    }
                 }
             }
         },
         "/api/v1/items": {
             "get": {
                 "responses": {
-                    "200": {}
+                    "200": {
+                        "description": "Standard response."
+                    }
                 }
             },
             "put": {
@@ -30,7 +34,9 @@
                     }
                 ],
                 "responses": {
-                    "200": {}
+                    "200": {
+                        "description": "Standard response"
+                    }
                 }
             },
             "post": {
@@ -45,7 +51,9 @@
                     }
                 ],
                 "responses": {
-                    "201": {}
+                    "201": {
+                        "description": "Standard response."
+                    }
                 }
             }
         }
